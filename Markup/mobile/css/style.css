@@ -1,0 +1,23 @@
+﻿body {margin: 0; padding: 0;}
+a {text-decoration: none;}
+.header{width: 100%; background-color: #0288d1;}
+.header .header_label {display: table; height: 40px; padding: 5px 0px 0px 5px;}
+	.header_label .logo {display: table-cell; width: 35px; height: 35px; background-image: url(../images/icon_set_small.png);  padding-right: 10px; margin: 0; font-size: 1.2em; color: #FFF; vertical-align: middle;}
+	.header_label h1 {display: table-cell; margin: 0; font-size: 1.2em; color: #FFF; vertical-align: middle;}
+	#header_fixed_navbar {display: block; width: 100%; height: 30px; padding: 5px 0 5px 0; background-color: #0288d1;}
+	#header_fixed_navbar .sidebar_menu {margin-top: 5px; margin-left: 5px; width: 20px; height: 20px; background-color: #0288d1; background-image: url(../images/icon_set_small.png); background-repeat: no-repeat; background-position: -45px 0;}
+	#header_fixed_navbar .dl-menu {margin-top: 10px; background-color: #29a7e1; border-top: 2px solid white; width: 150px;}
+	#header_fixed_navbar .dl-menu .nav {display: block;}
+	#header_fixed_navbar .dl-menu .navselected {background-color: #045e90;}
+	#header_fixed_navbar .dl-menu a img {width: 1.5em; height; 1.5em; vertical-align: middle;}
+	#header_fixed_navbar .dl-menu .navtext {font-size: 1.2em; text-indent: 10px; line-height: 1.5em; vertical-align: middle;}
+	#header_fixed_navbar .dl-menu li {border-bottom: 2px solid white;}
+	#header_fixed_navbar .user_avatar {display: inline-block; float: right; width: 30px; height: 30px; margin-right: 5px; border-radius: 12px;}
+	#header_fixed_navbar .user_info {display: inline-block; float: right; margin-top: 5px; color: white;}
+	#header_fixed_navbar .user_info .user_name {font-size: 0.8em; color: #eee;}
+	#header_fixed_navbar .user_info .user_part {font-size: 0.8em; color: #bbb;}
+	#header_fixed_navbar .user_info .user_pos {font-size: 0.8em; color: #999;}
+	#header_fixed_navbar .email {display: inline-block; position: relative; float: right; width: 22px; height: 25px; margin-left: 7px; margin-right: 5px;}
+	#header_fixed_navbar .email .email_icon {display: inline-block; width: 20px; height: 25px; background-image: url(../images/icon_set_small.png); background-repeat: no-repeat; background-position: -90px 0;}
+	#header_fixed_navbar .email .email_noti {display: inline-block; position: absolute; top: 1px; right: 0;  width: 10px; height: 10px; background-color: red; border-radius: 4px; font-size: 9px; line-height: 10px; color: white; font-weight: bold; text-align: center;}
+	#header_fixed_navbar .turnoff {display: inline-block; float: right; width: 25px; height: 25px; margin-right: 5px; background-image: url(../images/icon_set_small.png); background-repeat: no-repeat; background-position: -65px 0;}

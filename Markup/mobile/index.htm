@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/jquery_dlmenu_component.css" />
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/jquery_dlmenu/modernizr.custom.js"></script>
+	<script src="js/jquery_dlmenu/jquery.dlmenu.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="header_label">
+			<div class="logo"></div>
+			<h1>DELL服务卡销售和管理系统</h1>
+		</div>
+		<div id="header_fixed_navbar" class="dl-menuwrapper">
+			
+			<button class="sidebar_menu dl-trigger">Open Menu</button>
+			<ul class="dl-menu">
+				<li>
+					<a href="overview.html" class="nav navselected">
+						<img src="images/overview.png" alt="overview">
+						<span class="navtext">概览</span>
+					</a>
+				</li>
+				<li>
+					<a href="product.html" class="nav">
+						<img src="images/product.png" alt="product">
+						<span class="navtext">产品</span>
+					</a>
+				</li>
+				<li>
+					<a href="order.html" class="nav">
+						<img src="images/order.png" alt="order">
+						<span class="navtext">订单</span>
+					</a>
+				</li>
+				<li>
+					<a href="sales.html" class="nav">
+						<img src="images/sales.png" alt="sales">
+						<span class="navtext">销售</span>
+					</a>
+				</li>
+				<li>
+					<a href="stock.html" class="nav">
+						<img src="images/stock.png" alt="stock">
+						<span class="navtext">库存</span>
+					</a>
+				</li>
+				<li>
+					<a href="statistics.html" class="nav">
+						<img src="images/statistics.png" alt="statistics">
+						<span class="navtext">统计</span>
+					</a>
+				</li>
+				<li>
+					<a href="user.html" class="nav">
+						<img src="images/userlogo.png" alt="user">
+						<span class="navtext">用户</span>
+					</a>
+				</li>
+				<!--
+					<li>
+						<a href="#">Electronics</a>
+						<ul class="dl-submenu">
+							<li><a href="#">Camera &amp; Photo</a></li>
+							<li><a href="#">TV &amp; Home Cinema</a></li>
+							<li><a href="#">Phones</a></li>
+							<li><a href="#">PC &amp; Video Games</a></li>
+						</ul>
+					</li>
+				-->
+			</ul>
+			
+			
+			<span class="turnoff"></span>
+			<span class="email">
+				<span class="email_icon"></span>
+				<span class="email_noti">1</span>
+			</span>
+			<div class="user_info">
+				<span class="user_name">王经理</span>
+				<span class="user_part">（国贸门店）</span>
+				<span class="user_pos">经销商</span>
+			</div>
+			<img class="user_avatar" src="images/user_profile.jpg" >
+		</div>
+		<script>
+			$( document ).ready(function() {
+				var wscroll_position = 0;
+				var sub_header_selector = "#header_fixed_navbar";
+				var fix_header_offset = $(sub_header_selector).offset();
+				
+				function fix_sub_header() {
+					$(sub_header_selector).css("position", "fixed");
+					$(sub_header_selector).css("top", "0");
+				}
+				function unfix_sub_header() {
+					$(sub_header_selector).css("position", "static");
+				}
+
+				window.addEventListener('scroll', function(e) {
+					wscroll_position = window.scrollY;
+					if (wscroll_position > fix_header_offset.top) {
+						fix_sub_header();
+					}else{
+						unfix_sub_header();
+					}
+				});
+
+				//  sidebar menu
+				$( '#header_fixed_navbar' ).dlmenu({
+					animationClasses : { classin : 'dl-animate-in-2', classout : 'dl-animate-out-2' }
+				});
+			});
+			
+		</script>
+	</div>
+	
+
+  <div data-role="main" class="ui-content">
+    <p>An example of icon positioning in a navigation bar inside the header.</p>
+    <p>The data-iconpos="top" will position the icons above the text. <b>Note:</b> This is default.</p>
+    <p>An example of icon positioning in a navigation bar inside the header.</p>
+    <p>The data-iconpos="top" will position the icons above the text. <b>Note:</b> This is default.</p>
+    <p>An example of icon positioning in a navigation bar inside the header.</p>
+    <p>The data-iconpos="top" will position the icons above the text. <b>Note:</b> This is default.</p>
+    <p>An example of icon positioning in a navigation bar inside the header.</p>
+    <p>The data-iconpos="top" will position the icons above the text. <b>Note:</b> This is default.</p>
+    <p>An example of icon positioning in a navigation bar inside the header.</p>
+    <p>The data-iconpos="top" will position the icons above the text. <b>Note:</b> This is default.</p>
+    <p>An example of icon positioning in a navigation bar inside the header.</p>
+    <p>The data-iconpos="top" will position the icons above the text. <b>Note:</b> This is default.</p>
+    <p>An example of icon positioning in a navigation bar inside the header.</p>
+    <p>The data-iconpos="top" will position the icons above the text. <b>Note:</b> This is default.</p>
+    <p>An example of icon positioning in a navigation bar inside the header.</p>
+    <p>The data-iconpos="top" will position the icons above the text. <b>Note:</b> This is default.</p>
+    <p>An example of icon positioning in a navigation bar inside the header.</p>
+    <p>The data-iconpos="top" will position the icons above the text. <b>Note:</b> This is default.</p>
+    <p>An example of icon positioning in a navigation bar inside the header.</p>
+    <p>The data-iconpos="top" will position the icons above the text. <b>Note:</b> This is default.</p>
+    <p>An example of icon positioning in a navigation bar inside the header.</p>
+    <p>The data-iconpos="top" will position the icons above the text. <b>Note:</b> This is default.</p>
+    <p>An example of icon positioning in a navigation bar inside the header.</p>
+    <p>The data-iconpos="top" will position the icons above the text. <b>Note:</b> This is default.</p>
+    <p>An example of icon positioning in a navigation bar inside the header.</p>
+    <p>The data-iconpos="top" will position the icons above the text. <b>Note:</b> This is default.</p>
+    <p>An example of icon positioning in a navigation bar inside the header.</p>
+    <p>The data-iconpos="top" will position the icons above the text. <b>Note:</b> This is default.</p>
+    <p>An example of icon positioning in a navigation bar inside the header.</p>
+    <p>The data-iconpos="top" will position the icons above the text. <b>Note:</b> This is default.</p>
+    <p>An example of icon positioning in a navigation bar inside the header.</p>
+    <p>The data-iconpos="top" will position the icons above the text. <b>Note:</b> This is default.</p>
+    <p>An example of icon positioning in a navigation bar inside the header.</p>
+    <p>The data-iconpos="top" will position the icons above the text. <b>Note:</b> This is default.</p>
+    <p>An example of icon positioning in a navigation bar inside the header.</p>
+    <p>The data-iconpos="top" will position the icons above the text. <b>Note:</b> This is default.</p>
+    <p>An example of icon positioning in a navigation bar inside the header.</p>
+    <p>The data-iconpos="top" will position the icons above the text. <b>Note:</b> This is default.</p>
+    <p>An example of icon positioning in a navigation bar inside the header.</p>
+    <p>The data-iconpos="top" will position the icons above the text. <b>Note:</b> This is default.</p>
+    <p>An example of icon positioning in a navigation bar inside the header.</p>
+    <p>The data-iconpos="top" will position the icons above the text. <b>Note:</b> This is default.</p>
+    <p>An example of icon positioning in a navigation bar inside the header.</p>
+    <p>The data-iconpos="top" will position the icons above the text. <b>Note:</b> This is default.</p>
+    <p>An example of icon positioning in a navigation bar inside the header.</p>
+    <p>The data-iconpos="top" will position the icons above the text. <b>Note:</b> This is default.</p>
+    <p>An example of icon positioning in a navigation bar inside the header.</p>
+    <p>The data-iconpos="top" will position the icons above the text. <b>Note:</b> This is default.</p>
+    <p>An example of icon positioning in a navigation bar inside the header.</p>
+    <p>The data-iconpos="top" will position the icons above the text. <b>Note:</b> This is default.</p>
+    <p>An example of icon positioning in a navigation bar inside the header.</p>
+    <p>The data-iconpos="top" will position the icons above the text. <b>Note:</b> This is default.</p>
+    <p>An example of icon positioning in a navigation bar inside the header.</p>
+    <p>The data-iconpos="top" will position the icons above the text. <b>Note:</b> This is default.</p>
+  </div>
+
+  <div data-role="footer">
+    <h1>My Footer</h1>
+  </div>
+
+</body>
+</html>
