@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery-1.12.4.min.js"></script>
+	</head>
+	<body>
+		<div class="header">
+			<div class="header_label">
+				<div class="logo"></div>
+				<h1>DELL服务卡销售和管理系统</h1>
+			</div>
+			<div id="header_fixed_navbar" class="dl-menuwrapper">
+				
+				<span class="sidebar_menu" onclick="switchSideNav()"></span>
+				
+				<span class="turnoff"></span>
+				<span class="email">
+					<span class="email_icon"></span>
+					<span class="email_noti">1</span>
+				</span>
+				<div class="user_info">
+					<span class="user_name">王经理</span>
+					<span class="user_part">（国贸门店）</span>
+					<span class="user_pos">经销商</span>
+				</div>
+				<img class="user_avatar" src="images/user_profile.jpg" >
+			</div>
+			<script>
+				$( document ).ready(function() {
+					var wscroll_position = 0;
+					var sub_header_selector = "#header_fixed_navbar";
+					var fix_header_offset = $(sub_header_selector).position();
+					var fix_header_height = $(sub_header_selector).outerHeight();
+					console.log(fix_header_height);
+					var sidebar_offset = $(sub_header_selector).position().top;
+
+					function fix_sub_header() {
+						$(sub_header_selector).css("position", "fixed");
+						$(sub_header_selector).css("top", "0");
+						$(sub_header_selector).css("z-index", "10");
+					}
+					function unfix_sub_header() {
+						$(sub_header_selector).css("position", "static");
+					}
+
+					window.addEventListener('scroll', function(e) {
+						wscroll_position = window.scrollY;
+						if (wscroll_position > fix_header_offset.top) {
+							fix_sub_header();
+							sidebar_offset = 0;
+						}else{
+							unfix_sub_header();
+							sidebar_offset = $(sub_header_selector).position().top - wscroll_position;
+						}
+						set_sibebar();
+					});
+					
+					var set_sibebar = function (){
+						$("#mySidenav").css("transition", "0s");
+						$('#mySidenav').css('top', (sidebar_offset + fix_header_height) + 'px');
+					}
+					set_sibebar();
+					
+				});	
+				
+					
+				function switchSideNav() {
+					console.log();
+					$("#mySidenav").css("transition", "0.5s");
+					if($("#mySidenav").width() > 0){
+						$("#mySidenav").css("width", "0");
+					}else{
+						$("#mySidenav").css("width", "250px");
+						$("#mySidenav a").css("width", "250px");
+					}
+				}
+			</script>
+		</div>
+		
+		<div id="mySidenav" class="sidenav">
+			<a href="overview.html" class="nav navselected">
+				<img src="images/overview.png" alt="overview">
+				<span class="navtext">概览</span>
+			</a>
+			<a href="product.html" class="nav">
+				<img src="images/product.png" alt="product">
+				<span class="navtext">产品</span>
+			</a>
+			<a href="order.html" class="nav">
+				<img src="images/order.png" alt="order">
+				<span class="navtext">订单</span>
+			</a>
+			<a href="sales.html" class="nav">
+				<img src="images/sales.png" alt="sales">
+				<span class="navtext">销售</span>
+			</a>
+			<a href="stock.html" class="nav">
+				<img src="images/stock.png" alt="stock">
+				<span class="navtext">库存</span>
+			</a>
+			<a href="statistics.html" class="nav">
+				<img src="images/statistics.png" alt="statistics">
+				<span class="navtext">统计</span>
+			</a>
+			<a href="user.html" class="nav">
+				<img src="images/userlogo.png" alt="user">
+				<span class="navtext">用户</span>
+			</a>
+		</div>
+
+		<div class="content">
+			<div class="row mt-0">
+				<div class="col-xs-5">
+					<span class="subtitle">本周数据概览</span>
+				</div>
+				<div class="col-xs-7 text-right">
+					<a href="#" class="periodselected period">周</a>
+					<a href="#" class="period">月</a>
+					<a href="#" class="period">季</a>
+					<a href="#" class="period">年</a>	
+				</div>
+				<div class="clearboth"></div>
+			</div>
+			<div class="row mb_p10">
+				<ul class="infototal">
+					<li>
+						<div class="infototal_title">客户</div>
+						<div class="infototal_content">
+							<p>注册: 2,306 人</p>
+							<p>激活: 34,924 人</p>
+						</div>
+					</li>
+					<li>
+						<div class="infototal_title">销售</div>
+						<div class="infototal_content">
+							<p>经销商: 200,000 元</p>
+							<p>客户: 20,000,000 元</p>
+						</div>
+					</li>
+					<li>
+						<div class="infototal_title">库存</div>
+						<div class="infototal_content">
+							<p>新增: 20,000 张</p>
+							<p>总计: 10,0000 张</p>
+						</div>
+					</li>
+				</ul>	
+			</div>
+			<div class="row mb_p10 mt_p20">
+				<div class="col-xs-12">
+					<span class="subtitle">本周服务卡数据</span>	
+				</div>
+			</div>
+			<div class="row bg_white pt_p10 px_p10 mx_p10 smallfont_9">
+				<div class="col-xs-3 pa_p5 text-center col-xs-offset-2 bg_f63">客户激活</div>
+				<div class="col-xs-3 pa_p5 text-center bg_29a7e1">销售数量</div>
+				<div class="col-xs-3 pa_p5 text-center bg_f90">库存数量</div>
+			</div>
+			<div class="row bg_white px_p10 mx_p10 pt_p10 graph_block">
+				<div class="row">
+					<div class="col-xs-10 col-xs-offset-2 text-right borber_bottom_333">
+						服务卡（张）
+					</div>
+				</div>
+				<div class="graph graph_type1">
+					<div class="row">
+						<div class="col-xs-2 nopadding pt_p20 text-center">2017<br>07.05</div>
+						<div class="col-xs-10 py_p10 nopadding borber_left_333">
+							<div class="progress">
+								<div class="progress-bar bg_f63" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+							<div class="progress">
+								<div class="progress-bar bg_29a7e1" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+							<div class="progress">
+								<div class="progress-bar bg_f90" role="progressbar" style="width: 32%;" aria-valuenow="32" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-2 nopadding pt_p20 text-center">2017<br>07.04</div>
+						<div class="col-xs-10 py_p10 nopadding borber_left_333">
+							<div class="progress">
+								<div class="progress-bar bg_f63" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+							<div class="progress">
+								<div class="progress-bar bg_29a7e1" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+							<div class="progress">
+								<div class="progress-bar bg_f90" role="progressbar" style="width: 32%;" aria-valuenow="32" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+					</div>
+					<div class="row pb_p10">
+						<div class="col-xs-2 nopadding pt_p20 text-center">2017<br>07.03</div>
+						<div class="col-xs-10 py_p10 nopadding borber_left_333">
+							<div class="progress">
+								<div class="progress-bar bg_f63" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+							<div class="progress">
+								<div class="progress-bar bg_29a7e1" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+							<div class="progress">
+								<div class="progress-bar bg_f90" role="progressbar" style="width: 32%;" aria-valuenow="32" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

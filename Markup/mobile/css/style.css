@@ -1,11 +1,11 @@
 ﻿body {margin: 0; padding: 0;}
 a {text-decoration: none;}
-.header{width: 100%; background-color: #0288d1;}
+.header{width: 100%; height: 80px; background-color: #0288d1;}
 .header .header_label {display: table; height: 40px; padding: 5px 0px 0px 5px;}
-	.header_label .logo {display: table-cell; width: 35px; height: 35px; background-image: url(../images/icon_set_small.png);  padding-right: 10px; margin: 0; font-size: 1.2em; color: #FFF; vertical-align: middle;}
-	.header_label h1 {display: table-cell; margin: 0; font-size: 1.2em; color: #FFF; vertical-align: middle;}
-	#header_fixed_navbar {display: block; width: 100%; height: 30px; padding: 5px 0 5px 0; background-color: #0288d1;}
-	#header_fixed_navbar .sidebar_menu {margin-top: 5px; margin-left: 5px; width: 20px; height: 20px; background-color: #0288d1; background-image: url(../images/icon_set_small.png); background-repeat: no-repeat; background-position: -45px 0;}
+	.header_label .logo {display: table-cell; width: 35px; height: 35px; background-image: url(../images/icon_set_small.png);  margin: 0; font-size: 1.2em; color: #FFF; vertical-align: middle;}
+	.header_label h1 {display: table-cell; margin: 0; text-indent: 10px; font-size: 1.2em; color: #FFF; vertical-align: middle;}
+	#header_fixed_navbar {display: block; width: 100%; height: 40px; padding: 5px 0 5px 0; background-color: #0288d1;}
+	#header_fixed_navbar .sidebar_menu {display: inline-block; cursor: pointer; margin-top: 5px; margin-left: 5px; width: 20px; height: 20px; background-color: #0288d1; background-image: url(../images/icon_set_small.png); background-repeat: no-repeat; background-position: -45px 0;}
 	#header_fixed_navbar .dl-menu {margin-top: 10px; background-color: #29a7e1; border-top: 2px solid white; width: 150px;}
 	#header_fixed_navbar .dl-menu .nav {display: block;}
 	#header_fixed_navbar .dl-menu .navselected {background-color: #045e90;}
@@ -21,3 +21,48 @@ a {text-decoration: none;}
 	#header_fixed_navbar .email .email_icon {display: inline-block; width: 20px; height: 25px; background-image: url(../images/icon_set_small.png); background-repeat: no-repeat; background-position: -90px 0;}
 	#header_fixed_navbar .email .email_noti {display: inline-block; position: absolute; top: 1px; right: 0;  width: 10px; height: 10px; background-color: red; border-radius: 4px; font-size: 9px; line-height: 10px; color: white; font-weight: bold; text-align: center;}
 	#header_fixed_navbar .turnoff {display: inline-block; float: right; width: 25px; height: 25px; margin-right: 5px; background-image: url(../images/icon_set_small.png); background-repeat: no-repeat; background-position: -65px 0;}
+	
+.sidenav {height: 100%; width: 0; position: fixed; z-index: 1; top: 40px; left: 0; background-color: #29a7e1; overflow-x: hidden; border-top: 2px solid white;}
+	/* The navigation menu links */
+	.sidenav a {padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: white; display: block; transition: 0.3s; border-bottom: 2px solid white;}
+	.sidenav a img{width: 25px; height: 25px;}
+	.sidenav .navtext{margin-left: 15px;}
+	/* When you mouse over the navigation links, change their color */
+	.sidenav a:hover, .offcanvas a:focus{color: #f1f1f1;}
+	/* Position and style the close button (top right corner) */
+	.sidenav .closebtn {position: absolute; top: 0; right: 25px; font-size: 36px; margin-left: 50px;}
+	
+.content{padding-top: 10px; padding-bottom: 10px; background-color: #f2f2f2;}
+	.content .row{margin: 0;}
+	.content .nopadding{padding: 0;}
+	.content .mb_p10{margin-bottom: 10px;}
+	.content .mt_p20{margin-top: 20px;}
+	.content .mt_p10{margin-top: 10px;}
+	.content .mx_p10{margin-left: 10px; margin-right: 10px;}
+	.content .mx_p20{margin-left: 20px; margin-right: 20px;}
+	.content .pa_p5{padding: 5px;}
+	.content .pa_p10{padding: 10px;}
+	.content .pb_p10{padding-bottom: 10px;}
+	.content .pt_p10{padding-top: 10px;}
+	.content .pt_p20{padding-top: 20px;}
+	.content .px_p10{padding-left: 10px; padding-right: 10px;}
+	.content .px_p20{padding-left: 20px; padding-right: 20px;}
+	.content .py_p10{padding-top: 10px; padding-bottom: 10px;}
+	.content .bg_f63{background-color: #f63;}
+	.content .bg_29a7e1{background-color: #29a7e1;}
+	.content .bg_f90{background-color: #f90;}
+	.content .bg_white{background-color: white;}
+	.content .borber_bottom_333{border-bottom: 1px solid #333;}
+	.content .borber_left_333{border-left: 1px solid #333;}
+	.content .smallfont_8{font-size: 0.8em;}
+	.content .smallfont_9{font-size: 0.9em;}
+	.content .subtitle{font-size: 1.2em; font-weight: bold; color: #555;}
+	.content .period{padding: 0.3em 0.2em 0.3em 0.2em; background-color: #FFF; color: #999;}
+	.content .periodselected{background-color: #29a7e1; color: white;}
+	.content .infototal {list-style-type: none; margin: 0.5em 0 0.5em 0; padding: 0 20px 0 20px;}
+	.content .infototal li { margin: 0.5em 0 0.5em 0; }
+	.content .infototal_title {padding: 10px 0px; background-color: #29a7e1; font-size: 1.2em; color: white; text-align: center;}
+	.content .infototal_content {padding: 0.5em; background-color: white;}
+	.content .infototal_content p {line-height: 1.3em; margin: 0;}
+	.content .graph_type1 .progress {padding: 0; margin: 0; border-radius: 0; box-shadow: none; background: fixed;}
+	.content .graph_type1 .progress-bar {border-bottom-left-radius: 0; border-bottom-right-radius: 4px; border-top-left-radius: 0; border-top-right-radius: 4px;}
