@@ -1,0 +1,311 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>DingDing</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		<link href="css/jquery.treeview.css" type="text/css" rel="stylesheet"/>
+		<link href="css/jquery-ui.css" type="text/css" rel="stylesheet">
+		<link href="css/style.css" type="text/css" rel="stylesheet"/>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<div class="header_left">
+					<a href="#" class="logo_img"><img src="images/logo.png" alt="logo" /></a>
+					<h1>DELL服务卡销售和管理系统</h1>
+				</div>
+				<div class="header_right">
+					<img src="images/userlogo.png" alt="logo" class="userlogo" />
+					<span class="username">王经理（经销商)</span>
+					<a href="email.html" class="emailblock">
+						<span class="positionrelative">
+							<img src="images/email.png" alt="logo" class="email" />
+							<i class="emailalarm"></i>
+						</span>
+					</a>
+					<a href="#"><img src="images/power.png" alt="logo" class="power" /></a>
+				</div>	
+			</div>
+			<div class="container">
+				<div class="sidebar">
+					<a href="overview.html" class="nav">
+						<img src="images/overview.png" alt="overview" />
+						<span class="navtext">概览</span>
+					</a>
+					<a href="product.html" class="nav">
+						<img src="images/product.png" alt="product" />
+						<span class="navtext">产品</span>
+					</a>
+					<a href="order.html" class="nav">
+						<img src="images/order.png" alt="order" />
+						<span class="navtext">订单</span>
+					</a>
+					<a href="sales.html" class="nav navselected">
+						<img src="images/sales.png" alt="sales" />
+						<span class="navtext">销售</span>
+					</a>
+					<a href="stock.html" class="nav">
+						<img src="images/stock.png" alt="stock" />
+						<span class="navtext">库存</span>
+					</a>
+					<a href="statistics.html" class="nav">
+						<img src="images/statistics.png" alt="statistics" />
+						<span class="navtext">统计</span>
+					</a>
+					<a href="user.html" class="nav">
+						<img src="images/userlogo.png" alt="user" />
+						<span class="navtext">用户</span>
+					</a>
+				</div>
+				<div class="content">
+					<div class="block">
+						<div class="left">
+							<span class="subtitle">销售信息</span>
+						</div>
+						<div class="right">
+							<a href="#" class="orderbtnselected orderbtn saleactivate">销售信息</a>	
+						</div>
+						<div class="clearboth"></div>
+					</div>
+					<div class="block">
+						<div class="left">
+							<a href="#" class="ordersortbtnselected ordersortbtn">全部</a>
+							<a href="#" class="ordersortbtn">未注册</a>
+							<a href="#" class="ordersortbtn">已注册</a>
+						</div>
+						<div class="right">
+							<a href="#" class="ordersortbtn salesbtnwidth fontcolor4">可输入服务卡号码进行查询</a>	
+						</div>
+						<div class="clearboth"></div>
+					</div>						
+					<div class="block backgroundwhite">
+						<form method="get" action="#">
+							<div class="searchlayout">
+								<select class="text_sketch">
+									<option selected="" value="-- 全部服务卡产品 --">-- 全部服务卡产--</option>
+									<option value="灵越质保一年产品">灵越质保一年产品</option>
+									<option value="DELL一年上门服务">DELL一年上门服务</option>
+								</select>
+							</div>
+							<div class="searchlayout">
+								<select class="text_sketch">
+									<option selected="" value="-- 全部经销商 --">-- 全部经销商 --</option>
+									<option value="国贸门店">国贸门店</option>
+								</select>
+							</div>
+							<div class="searchlayout">
+								<input type="text" name="searchdatestart" class="searchdatestart" placeholder="开始时间" />
+								<img src="images/date.png" class="date" alt="date" />
+							</div>
+							<div class="searchlayout">
+								<input type="text" name="searchdatestart" class="searchdateend" placeholder="截止时间" />
+								<img src="images/date.png" class="date" alt="date" />
+							</div>
+							<div class="searchlayout">
+								<input type="submit" name="searchsubmit" class="searchsubmit" value="查询" />
+							</div>
+						</form>
+					</div>
+					<div class="block backgroundwhite margintop25">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>产品编号</th>
+									<th>产品名称</th>
+									<th>单价(元)</th>
+									<th>数量</th>
+									<th>优惠</th>
+									<th>购买时间</th>
+									<th>实收(元)</th>
+									<th>销售员</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>254-61050</td>
+									<td>戴尔灵越笔记本保外维修服务一年</td>
+									<td>300</td>
+									<td>X 2</td>
+									<td>- 50</td>
+									<td>2017.08.10 10:23</td>
+									<td>550</td>
+									<td>张某某
+										<a href="#" class="salesregist">注册</a>
+									</td>
+								</tr>
+								<tr>
+									<td>254-61050</td>
+									<td>戴尔灵越笔记本保外维修服务一年</td>
+									<td>300</td>
+									<td>X 2</td>
+									<td>- 50</td>
+									<td>2017.08.10 10:23</td>
+									<td>550</td>
+									<td>张某某
+										<span class="salesregisted">已注册</span>
+									</td>
+								</tr>
+								<tr>
+									<td>254-61050</td>
+									<td>戴尔灵越笔记本保外维修服务一年</td>
+									<td>300</td>
+									<td>X 2</td>
+									<td>- 50</td>
+									<td>2017.08.10 10:23</td>
+									<td>550</td>
+									<td>张某某
+										<span class="salesregisted">已注册</span>
+									</td>
+								</tr>
+								<tr>
+									<td>254-61050</td>
+									<td>戴尔灵越笔记本保外维修服务一年</td>
+									<td><strong>300</strong></td>
+									<td>X 2</td>
+									<td>- 50</td>
+									<td>2017.08.10 10:23</td>
+									<td><strong>550</td>
+									<td>张某某
+										<span class="salesregisted">已注册</span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="pagenav_block">
+							<span class="pageinfo">第 1-20条 ，共1234条</span>
+							<ul class="pagination">
+								<li><a href="?pagenum=1">처음</a></li>
+								<li><a href="?pagenum=7">이전</a></li>
+								<li class="active"><a href="?pagenum=1">1</a></li>
+								<li><a href="?pagenum=2">2</a></li>
+								<li><a href="?pagenum=3">3</a></li>
+								<li><a href="?pagenum=4">4</a></li>
+								<li><a href="?pagenum=5">5</a></li>
+								<li><a href="?pagenum=15">다음</a></li>
+								<li><a href="?pagenum=141">끝</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="block"></div>
+				</div>
+				<div class="clearboth"></div>
+			</div>
+			<div class="footer">
+
+			</div>
+		</div>
+		<!-- dialog html -->
+		<div id="sale-activate" class="message-dlg" title="服务卡激活">
+			<div class="field_narrow1">
+				<div class="field_name">
+					服务卡号码：
+				</div>
+				<input type="text" id="card_no" name="card_no" class="input_type1" />
+			</div>
+			<div class="field_narrow1">
+				<div class="field_name">
+					服务卡密码：
+				</div>
+				<input type="text" id="card_pwd" name="card_pwd" class="input_type1" />
+			</div>
+			<div class="field_narrow1">
+				<div class="field_name">
+					销售人员：
+				</div>
+				<select id="shop_type" name="shop_type" class="select_type">
+					<option selected value="0">- 选择经销商 -</option>
+					<option value="1">DELL售后国贸店</option>
+				</select>
+				<select id="member_type" name="member_type" class="select_type">
+					<option selected value="0">- 选择销售人员 -</option>
+					<option value="1">张经理</option>
+				</select>
+			</div>
+			<div class="field_narrow1">
+				<div class="field_name">
+					服务卡产品：
+				</div>
+				<div class="field_val">
+					DELL灵越一年延保产品
+				</div>
+				<div class="field_val_black horizontal-space">
+					682-36125
+				</div>
+			</div>
+			<div class="field_note">
+				<div class="field_name">
+				</div>
+				<div class="field_val_normal_black">
+					有效期 2018-08-01
+				</div>
+			</div>
+			<div class="field">
+				<button id="okSaleActivateBtn" class="continuebtn">
+					激活，继续用户注册
+				</button>
+				<button id="cancelSaleActivateBtn" class="stopbtn">
+					激活，暂不注册
+				</button>
+			</div>
+			<div class="field_narrow1">
+			</div>
+		</div>
+	
+		<div id="sale-reg" class="message-dlg" title="服务卡注册">
+			<div class="field_narrow1">
+				<div class="field_name">
+					绑定服务卡：
+				</div>
+				<div class="field_val">
+					DELL灵越一年延保产品
+				</div>
+				<div class="field_val_black horizontal-space">
+					682-36125
+				</div>
+			</div>
+			<div class="field_narrow1">
+				<div class="field_name">
+					机器设备码：
+				</div>
+				<input type="text" id="machine_no" name="machine_no" class="input_type1" />
+			</div>
+			<div class="field_narrow1">
+				<div class="field_name">
+					客户姓名：
+				</div>
+				<input type="text" id="user_name" name="user_name" class="input_type2" />
+			</div>
+			<div class="field_narrow1">
+				<div class="field_name">
+					联系方式：
+				</div>
+				<input type="text" id="contact_type" name="contact_type" class="input_type2" />
+			</div>
+			<div class="field_narrow1">
+				<div class="field_name">
+					售后地址：
+				</div>
+				<input type="text" id="contact_addr" name="contact_addr" class="input_type3" />
+			</div>
+			<div class="field">
+				<button id="okSaleRegBtn" class="okbtn">
+					用户注册
+				</button>
+			</div>
+			<div class="field_narrow1">
+			</div>
+		</div>
+	</body>	
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<script src="js/jquery.treeview.js"></script>
+	<script src="js/control.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#browser").treeview();
+		});
+	</script>
+</html>

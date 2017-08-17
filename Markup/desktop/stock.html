@@ -1,0 +1,296 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>DingDing</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		<link href="css/jquery.treeview.css" type="text/css" rel="stylesheet"/>
+		<link href="css/jquery-ui.css" type="text/css" rel="stylesheet">
+		<link href="css/style.css" type="text/css" rel="stylesheet"/>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<div class="header_left">
+					<a href="#" class="logo_img"><img src="images/logo.png" alt="logo" /></a>
+					<h1>DELL服务卡销售和管理系统</h1>
+				</div>
+				<div class="header_right">
+					<img src="images/userlogo.png" alt="logo" class="userlogo" />
+					<span class="username">王经理（经销商)</span>
+					<a href="email.html" class="emailblock">
+						<span class="positionrelative">
+							<img src="images/email.png" alt="logo" class="email" />
+							<i class="emailalarm"></i>
+						</span>
+					</a>
+					<a href="#"><img src="images/power.png" alt="logo" class="power" /></a>
+				</div>	
+			</div>
+			<div class="container">
+				<div class="sidebar">
+					<a href="overview.html" class="nav">
+						<img src="images/overview.png" alt="overview" />
+						<span class="navtext">概览</span>
+					</a>
+					<a href="product.html" class="nav">
+						<img src="images/product.png" alt="product" />
+						<span class="navtext">产品</span>
+					</a>
+					<a href="order.html" class="nav">
+						<img src="images/order.png" alt="order" />
+						<span class="navtext">订单</span>
+					</a>
+					<a href="sales.html" class="nav">
+						<img src="images/sales.png" alt="sales" />
+						<span class="navtext">销售</span>
+					</a>
+					<a href="stock.html" class="nav navselected">
+						<img src="images/stock.png" alt="stock" />
+						<span class="navtext">库存</span>
+					</a>
+					<a href="statistics.html" class="nav">
+						<img src="images/statistics.png" alt="statistics" />
+						<span class="navtext">统计</span>
+					</a>
+					<a href="user.html" class="nav">
+						<img src="images/userlogo.png" alt="user" />
+						<span class="navtext">用户</span>
+					</a>
+				</div>
+				<div class="content">
+					<div class="block">
+						<div class="left">
+							<span class="subtitle">库存信息</span>
+						</div>
+						<div class="right">
+							<a href="#" class="ordersortbtn salesbtnwidth fontcolor4">可输入服务卡产品名称进行查询</a>	
+						</div>
+						<div class="clearboth"></div>
+					</div>					
+					<div class="block backgroundwhite">
+						<form method="get" action="#">
+							<div class="searchlayout">
+								<select class="text_sketch">
+									<option selected="" value="-- 全部产品--">-- 全部产品--</option>
+									<option value="常规产品">常规产品</option>
+									<option value="非常规产品">非常规产品</option>
+								</select>
+							</div>
+							<div class="searchlayout">
+								<select class="text_sketch">
+									<option selected="" value="-- 服务卡二级分类 --">-- 服务卡二级分类 --</option>
+								</select>
+							</div>
+							<div class="searchlayout">
+								<select class="text_sketch">
+									<option selected="" value="-- 全部服务卡产品 --">-- 全部服务卡产品 --</option>
+									<option value="灵越质保一年产品">灵越质保一年产品</option>
+									<option value="DELL一年上门服务">DELL一年上门服务</option>
+								</select>
+							</div>
+							<div class="searchlayout">
+								<input type="submit" name="searchsubmit" class="searchsubmit" value="查询" />
+							</div>
+						</form>
+					</div>
+					<div class="block backgroundwhite margintop25">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>产品编号</th>
+									<th>产品名称</th>
+									<th>进货价/零售价(元)</th>
+									<th>库存</th>
+									<th>进货渠道</th>
+									<th>服务卡操作</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>254-61050</td>
+									<td>戴尔灵越笔记本保外维修服务一年</td>
+									<td>200 / 300</td>
+									<td>200</td>
+									<td>DELL服务卡总经销商<br>
+										2017.08.10 10:23</td>
+									<td>
+											<a href="#" class="stockservicebtn stockservicedownload">下载</a>
+											<a href="#" class="stockservicebtn stockservicereturn">退货</a>
+									</td>
+								</tr>
+								<tr>
+									<td>254-61050</td>
+									<td>戴尔灵越笔记本保外维修服务一年</td>
+									<td>200 / 300</td>
+									<td>200</td>
+									<td>DELL服务卡总经销商<br>
+										2017.08.10 10:23</td>
+									<td>
+											<a href="#" class="stockservicebtn stockservicedownload">下载</a>
+											<a href="#" class="stockservicebtn stockservicereturn">退货</a>
+									</td>
+								</tr>
+								<tr>
+									<td>254-61050</td>
+									<td>戴尔灵越笔记本保外维修服务一年</td>
+									<td>200 / 300</td>
+									<td>200</td>
+									<td>DELL服务卡总经销商<br>
+										2017.08.10 10:23</td>
+									<td>
+										<a href="#" class="stockservicebtn stockservicedownload">下载</a>
+										<a href="#" class="stockservicebtn stockservicereturn">退货</a>
+									</td>
+								</tr>
+								<tr>
+									<td>254-61050</td>
+									<td>戴尔灵越笔记本保外维修服务一年</td>
+									<td>200 / 300</td>
+									<td>200</td>
+									<td>DELL服务卡总经销商<br>
+										2017.08.10 10:23</td>
+									<td>
+											<a href="#" class="stockservicebtn stockservicedownload">下载</a>
+											<a href="#" class="stockservicebtn stockservicereturn">退货</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="pagenav_block">
+							<span class="pageinfo">第 1-20条 ，共1234条</span>
+							<ul class="pagination">
+								<li><a href="?pagenum=1">처음</a></li>
+								<li><a href="?pagenum=7">이전</a></li>
+								<li class="active"><a href="?pagenum=1">1</a></li>
+								<li><a href="?pagenum=2">2</a></li>
+								<li><a href="?pagenum=3">3</a></li>
+								<li><a href="?pagenum=4">4</a></li>
+								<li><a href="?pagenum=5">5</a></li>
+								<li><a href="?pagenum=15">다음</a></li>
+								<li><a href="?pagenum=141">끝</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="block"></div>
+				</div>
+				<div class="clearboth"></div>
+			</div>
+			<div class="footer">
+
+			</div>
+		</div>
+		<!-- dialog html -->
+		<div id="stock-down" class="message-dlg" title="服务卡下载">
+			<div class="field_narrow1">
+				<div class="field_name">
+					产品名称：
+				</div>
+				<div class="field_val">
+					DELL灵越一年延保产品
+				</div>
+				<div class="field_val_black horizontal-space">
+					682-36125
+				</div>
+			</div>
+			<div class="field_narrow1">
+				<div class="field_name">
+					库存数量：
+				</div>
+				<div class="field_val_black">
+					200
+				</div>
+			</div>
+			<div class="field_narrow1">
+				<div class="field_name">
+					邮箱地址：
+				</div>
+				<input type="text" id="contact_email" name="contact_email" class="input_type2" />
+			</div>
+			<div class="field_note">
+				<div class="field_name">
+				</div>
+				<div class="field_val_normal_red">
+					服务卡及激活密码将发送到您的指定邮箱
+				</div>
+			</div>
+			<div class="field">
+				<button id="okStockDownBtn" class="okbtn">
+					下载服务卡
+				</button>
+			</div>
+			<div class="field_narrow1">
+			</div>
+		</div>
+		<div id="stock-return" class="message-dlg" title="服务卡退换货">
+			<div class="field_narrow1">
+				<div class="field_name">
+					退货服务卡：
+				</div>
+				<div class="field_val">
+					DELL灵越一年延保产品
+				</div>
+				<div class="field_val_black horizontal-space">
+					682-36125
+				</div>
+			</div>
+			<div class="field_narrow1">
+				<div class="field_name">
+					退货数量：
+				</div>
+				<input type="text" id="return_count" name="return_count" class="input_type" />
+				<div class="field_val_normal_red horizontal-space">
+					当前可退数量 200
+				</div>
+			</div>
+			<div class="field_narrow1">
+				<div class="field_name">
+					是否换货：
+				</div>
+				<input type="checkbox" id="is_return" name="is_return" value="yes"  checked />
+			</div>
+			<div class="field_narrow1">
+				<div class="field_name">
+					更换产品：
+				</div>
+				<select id="ret_prod_type" name="ret_prod_type" class="select_type1">
+					<option selected value="0">常规产品</option>
+					<option value="1">非常规产品</option>
+				</select>
+				<select id="ret_card_type" name="ret_card_type" class="select_type1 horizontal-space">
+					<option selected value="0">-- 服务卡二级分类 --</option>
+				</select>
+				<select id="ret_serv_type" name="ret_serv_type" class="select_type1 horizontal-space">
+					<option selected value="0">灵越质保一年产品</option>
+					<option value="1">DELL一年上门服务</option>
+				</select>
+			</div>
+			<div class="field_note">
+				<div class="field_name">
+				</div>
+				<input type="text" id="ret_prod_count" name="ret_prod_count" class="input_type" />
+				<div class="field_val_normal_red horizontal-space">
+					该产品当前库存 1000
+				</div>
+			</div>
+			<div class="field">
+				<button id="okStockReturnBtn" class="okbtn">
+					提交申请
+				</button>
+			</div>
+			<div class="field_narrow1">
+			</div>
+		</div>
+	</body>	
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<script src="js/jquery.treeview.js"></script>
+	<script src="js/control.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#browser").treeview();
+		});
+	</script>
+</html>

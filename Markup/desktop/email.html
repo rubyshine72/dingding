@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>DingDing</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		<link href="css/jquery.treeview.css" type="text/css" rel="stylesheet"/>
+		<link href="css/jquery-ui.css" type="text/css" rel="stylesheet">
+		<link href="css/style.css" type="text/css" rel="stylesheet"/>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<div class="header_left">
+					<a href="#" class="logo_img"><img src="images/logo.png" alt="logo" /></a>
+					<h1>DELL服务卡销售和管理系统</h1>
+				</div>
+				<div class="header_right">
+					<img src="images/userlogo.png" alt="logo" class="userlogo" />
+					<span class="username">王经理（经销商)</span>
+					<a href="email.html" class="emailblock">
+						<span class="positionrelative">
+							<img src="images/email.png" alt="logo" class="email" />
+							<i class="emailalarm"></i>
+						</span>
+					</a>
+					<a href="#"><img src="images/power.png" alt="logo" class="power" /></a>
+				</div>	
+			</div>
+			<div class="container">
+				<div class="sidebar">
+					<a href="overview.html" class="nav">
+						<img src="images/overview.png" alt="overview" />
+						<span class="navtext">概览</span>
+					</a>
+					<a href="product.html" class="nav">
+						<img src="images/product.png" alt="product" />
+						<span class="navtext">产品</span>
+					</a>
+					<a href="order.html" class="nav">
+						<img src="images/order.png" alt="order" />
+						<span class="navtext">订单</span>
+					</a>
+					<a href="sales.html" class="nav">
+						<img src="images/sales.png" alt="sales" />
+						<span class="navtext">销售</span>
+					</a>
+					<a href="stock.html" class="nav">
+						<img src="images/stock.png" alt="stock" />
+						<span class="navtext">库存</span>
+					</a>
+					<a href="statistics.html" class="nav">
+						<img src="images/statistics.png" alt="statistics" />
+						<span class="navtext">统计</span>
+					</a>
+					<a href="user.html" class="nav">
+						<img src="images/userlogo.png" alt="user" />
+						<span class="navtext">用户</span>
+					</a>
+				</div>
+				<div class="content">
+					<div class="block">
+						<span class="subtitle">系统消息</span>
+					</div>					
+					<div class="block backgroundwhite">
+						<form method="get" action="#">
+							<div class="searchlayout">
+								<select class="text_sketch">
+									<option selected="" value="-- 全部消--">-- 全部消息--</option>
+									<option value="通知消息">通知消息</option>
+									<option value="审核信息">审核信息</option>
+								</select>
+							</div>
+							<div class="searchlayout">
+								<input type="text" name="searchdatestart" class="searchdatestart" placeholder="可输入关键字进行查询" />
+							</div>
+							<div class="searchlayout">
+								<input type="submit" name="searchsubmit" class="searchsubmit widthauto bgcolor1" value="删除消息" />
+							</div>
+						</form>
+					</div>
+					<div class="block backgroundwhite margintop25">
+						<table class="table">
+							<thead>
+								<tr>
+									<th><input type="checkbox" name="mailchecked"></th>
+									<th>消息类型</th>
+									<th>消息内容</th>
+									<th>用户操作</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><input type="checkbox" name="mailchecked"></td>
+									<td>进货申请</td>
+									<td>DELL国贸店申请进货服务卡“戴尔灵越笔记本保外维修服务一年”2000张</td>
+									<td><a href="#" class="stockservicebtn  widthauto" id="mailinfo">查看详情</a></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" name="mailchecked"></td>
+									<td>进货申请</td>
+									<td>DELL国贸店申请进货服务卡“戴尔灵越笔记本保外维修服务一年”2000张</td>
+									<td><a href="#" class="stockservicebtn  widthauto" id="mailinfo1">查看详情</a></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" name="mailchecked"></td>
+									<td>进货申请</td>
+									<td>DELL国贸店申请进货服务卡“戴尔灵越笔记本保外维修服务一年”2000张</td>
+									<td><a href="#" class="stockservicebtn  widthauto">查看详情</a></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" name="mailchecked"></td>
+									<td>进货申请</td>
+									<td>DELL国贸店申请进货服务卡“戴尔灵越笔记本保外维修服务一年”2000张</td>
+									<td><a href="#" class="stockservicebtn  widthauto">查看详情</a></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" name="mailchecked"></td>
+									<td>进货申请</td>
+									<td>DELL国贸店申请进货服务卡“戴尔灵越笔记本保外维修服务一年”2000张</td>
+									<td><a href="#" class="stockservicebtn  widthauto">查看详情</a></td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="pagenav_block">
+							<span class="pageinfo">第 1-20条 ，共1234条</span>
+							<ul class="pagination">
+								<li><a href="?pagenum=1">처음</a></li>
+								<li><a href="?pagenum=7">이전</a></li>
+								<li class="active"><a href="?pagenum=1">1</a></li>
+								<li><a href="?pagenum=2">2</a></li>
+								<li><a href="?pagenum=3">3</a></li>
+								<li><a href="?pagenum=4">4</a></li>
+								<li><a href="?pagenum=5">5</a></li>
+								<li><a href="?pagenum=15">다음</a></li>
+								<li><a href="?pagenum=141">끝</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="block"></div>
+				</div>
+				<div class="clearboth"></div>
+			</div>
+			<div class="footer">
+
+			</div>
+		</div>
+		<!-- dialog html -->
+		<div id="message-info" class="message-dlg" title="进货申请">
+			<div class="field">
+				<div class="field_name">
+					经销商：
+				</div>
+				<div class="field_val">
+					DELL国贸店
+				</div>
+			</div>
+			<div class="field">
+				<div class="field_name">
+					服务卡：
+				</div>
+				<div class="field_val">
+					戴尔灵越笔记本保外维修服务一年
+				</div>
+			</div>
+			<div class="field">
+				<div class="field_name">
+					订单数量：
+				</div>
+				<div class="field_val">
+					2000张
+				</div>
+			</div>
+			<div class="field">
+				<button id="okMsgInfoBtn" class="okbtn">
+					同意进货
+				</button>
+				<button id="cancelMsgInfoBtn" class="cancelbtn">
+					拒绝申请
+				</button>
+			</div>
+			<div class="field">
+			</div>
+		</div>
+	
+		<div id="message-info1" class="message-dlg" title="订单信息">
+			<div class="field">
+				<div class="title">
+					您的订单已生效，“戴尔灵越笔记本保外维修服务一年”2000张已进入库存。
+				</div>
+			</div>
+			<div class="field">
+				<div class="field_name">
+					服务卡：
+				</div>
+				<div class="field_val_black">
+					戴尔灵越笔记本保外维修服务一年
+				</div>
+			</div>
+			<div class="field">
+				<div class="field_name">
+					订单数量：
+				</div>
+				<div class="field_val_red">
+					2000张
+				</div>
+			</div>
+			<div class="field">
+				<button id="cancelMsgInfo1Btn" class="okbtn">
+					关闭
+				</button>
+			</div>
+			<div class="field">
+			</div>
+		</div>
+	</body>	
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<script src="js/jquery.treeview.js"></script>
+	<script src="js/control.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#browser").treeview();
+		});
+	</script>
+</html>

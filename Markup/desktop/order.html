@@ -1,0 +1,260 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>DingDing</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		<link href="css/jquery.treeview.css" type="text/css" rel="stylesheet"/>
+		<link href="css/jquery-ui.css" type="text/css" rel="stylesheet">
+		<link href="css/style.css" type="text/css" rel="stylesheet"/>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<div class="header_left">
+					<a href="#" class="logo_img"><img src="images/logo.png" alt="logo" /></a>
+					<h1>DELL服务卡销售和管理系统</h1>
+				</div>
+				<div class="header_right">
+					<img src="images/userlogo.png" alt="logo" class="userlogo" />
+					<span class="username">王经理（经销商)</span>
+					<a href="email.html" class="emailblock">
+						<span class="positionrelative">
+							<img src="images/email.png" alt="logo" class="email" />
+							<i class="emailalarm"></i>
+						</span>
+					</a>
+					<a href="#"><img src="images/power.png" alt="logo" class="power" /></a>
+				</div>	
+			</div>
+			<div class="container">
+				<div class="sidebar">
+					<a href="overview.html" class="nav">
+						<img src="images/overview.png" alt="overview" />
+						<span class="navtext">概览</span>
+					</a>
+					<a href="product.html" class="nav">
+						<img src="images/product.png" alt="product" />
+						<span class="navtext">产品</span>
+					</a>
+					<a href="order.html" class="nav navselected">
+						<img src="images/order.png" alt="order" />
+						<span class="navtext">订单</span>
+					</a>
+					<a href="sales.html" class="nav">
+						<img src="images/sales.png" alt="sales" />
+						<span class="navtext">销售</span>
+					</a>
+					<a href="stock.html" class="nav">
+						<img src="images/stock.png" alt="stock" />
+						<span class="navtext">库存</span>
+					</a>
+					<a href="statistics.html" class="nav">
+						<img src="images/statistics.png" alt="statistics" />
+						<span class="navtext">统计</span>
+					</a>
+					<a href="user.html" class="nav">
+						<img src="images/userlogo.png" alt="user" />
+						<span class="navtext">用户</span>
+					</a>
+				</div>
+				<div class="content">
+					<div class="block">
+						<div class="left">
+							<span class="subtitle">订单信息</span>
+						</div>
+						<div class="right">
+							<a href="#" class="orderbtnselected orderbtn">发起订单</a>	
+						</div>
+						<div class="clearboth"></div>
+					</div>
+					<div class="block">
+						<a href="#" class="ordersortbtnselected ordersortbtn">全部订单</a>
+						<a href="#" class="ordersortbtn">出货单</a>
+						<a href="#" class="ordersortbtn">进货单</a>
+						<a href="#" class="ordersortbtn">退换货</a>
+					</div>						
+					<div class="block backgroundwhite">
+						<form method="get" action="#">
+							<div class="searchlayout">
+								<select class="text_sketch">
+									<option selected="" value="-- 全部服务卡产品 --">-- 全部服务卡产--</option>
+									<option value="灵越质保一年产品">灵越质保一年产品</option>
+									<option value="DELL一年上门服务">DELL一年上门服务</option>
+								</select>
+							</div>
+							<div class="searchlayout">
+								<select class="text_sketch">
+									<option selected="" value="-- 全部经销商 --">-- 全部经销商 --</option>
+									<option value="国贸门店">国贸门店</option>
+								</select>
+							</div>
+							<div class="searchlayout">
+								<input type="text" name="searchdatestart" class="searchdatestart" placeholder="开始时间" />
+								<img src="images/date.png" class="date" alt="date" />
+							</div>
+							<div class="searchlayout">
+								<input type="text" name="searchdatestart" class="searchdateend" placeholder="截止时间" />
+								<img src="images/date.png" class="date" alt="date" />
+							</div>
+							<div class="searchlayout">
+								<input type="submit" name="searchsubmit" class="searchsubmit" value="查询" />
+							</div>
+						</form>
+					</div>
+					<div class="block backgroundwhite margintop25">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>产品编号</th>
+									<th>产品名称</th>
+									<th>折扣价/原价(元)</th>
+									<th>下单数量</th>
+									<th>下单时间</th>
+									<th>结算金额(元)</th>
+									<th>结算金</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>254-61050</td>
+									<td>戴尔灵越笔记本保外维修服务</td>
+									<td><strong>200</strong> / 300</td>
+									<td>2000张</td>
+									<td>2017.08.10 10:23</td>
+									<td class="fontcolor1"><strong>- 400000</strong></td>
+									<td class="fontcolor1"><strong>进货</strong></td>
+								</tr>
+								<tr>
+									<td>254-61050</td>
+									<td>戴尔灵越笔记本保外维修服务</td>
+									<td><strong>200</strong> / 300</td>
+									<td>2000张</td>
+									<td>2017.08.10 10:23</td>
+									<td class="fontcolor1"><strong>- 400000</strong></td>
+									<td class="fontcolor1"><strong>进货</strong></td>
+								</tr>
+								<tr>
+									<td>254-61050</td>
+									<td>戴尔灵越笔记本保外维修服务</td>
+									<td><strong>200</strong> / 300</td>
+									<td>2000张</td>
+									<td>2017.08.10 10:23</td>
+									<td class="fontcolor3"><strong>0</strong></td>
+									<td class="fontcolor3"><strong>进货</strong></td>
+								</tr>
+								<tr>
+									<td>254-61050</td>
+									<td>戴尔灵越笔记本保外维修服务</td>
+									<td><strong>200</strong> / 300</td>
+									<td>2000张</td>
+									<td>2017.08.10 10:23</td>
+									<td class="fontcolor2"><strong>+ 50000</strong></td>
+									<td class="fontcolor2"><strong>进货</strong></td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="pagenav_block">
+							<span class="pageinfo">第 1-20条 ，共1234条</span>
+							<ul class="pagination">
+								<li><a href="?pagenum=1">처음</a></li>
+								<li><a href="?pagenum=7">이전</a></li>
+								<li class="active"><a href="?pagenum=1">1</a></li>
+								<li><a href="?pagenum=2">2</a></li>
+								<li><a href="?pagenum=3">3</a></li>
+								<li><a href="?pagenum=4">4</a></li>
+								<li><a href="?pagenum=5">5</a></li>
+								<li><a href="?pagenum=15">다음</a></li>
+								<li><a href="?pagenum=141">끝</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="block"></div>
+				</div>
+				<div class="clearboth"></div>
+			</div>
+			<div class="footer">
+
+			</div>
+		</div>
+		<!-- dialog html -->
+		<div id="order-new" class="message-dlg" title="发起订单">
+			<div class="field">
+				<div class="field_name">
+					订单类型：
+				</div>
+				<select id="propose_type" name="propose_type" class="select_type">
+					<option selected value="0">进货</option>
+					<option value="1">退换货</option>
+				</select>
+			</div>
+			<div class="field_narrow">
+				<div class="field_name">
+					选择产品：
+				</div>
+				<select id="level1_product" name="level1_product" class="select_type">
+					<option selected value="0">一级产品目录</option>
+				</select>
+				<select id="level2_product" name="level2_product" class="select_type">
+					<option selected value="0">二级产品目录</option>
+				</select>
+				<select id="product_type" name="product_type" class="select_thing">
+					<option value="0">产品名称</option>
+					<option selected value="1">灵越笔记本一年质保</option>
+				</select>
+			</div>
+			<div class="field_note">
+				<div class="field_name">
+				</div>
+				<div class="field_val">
+					灵越笔记本一年质保服务卡
+				</div>
+			</div>
+			<div class="field_note">
+				<div class="field_name">
+				</div>
+				<div class="field_val_normal">
+					折扣价：180元&nbsp&nbsp&nbsp&nbsp原价：200元
+				</div>
+			</div>
+			<div class="field_narrow">
+				<div class="field_name">
+					订单数量：
+				</div>
+				<input type="text" id="product_count" name="product_count" class="input_type" />
+				<span class="field_val_normal_black">张</span>
+				<span class="field_val_normal_red">剩余库存10000张</span>
+			</div>
+			<div class="field_note">
+				<div class="field_name">
+				</div>
+				<span class="field_val_note">注：本产品下单数量每次不得少于100张。</span>
+			</div>
+			<div class="field_narrow">
+				<div class="field_name">
+					结算金额：
+				</div>
+				<div class="field_val_red">
+					100000 元
+				</div>
+			</div>
+			<div class="field_narrow">
+				<button id="okOrderNewBtn" class="okbtn">
+					立即下单
+				</button>
+			</div>
+			<div class="field_narrow">
+			</div>
+		</div>
+	</body>	
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<script src="js/jquery.treeview.js"></script>
+	<script src="js/control.js"></script>
+		$(document).ready(function(){
+			$("#browser").treeview();
+		});
+	</script>
+</html>
